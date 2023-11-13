@@ -1,0 +1,159 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background: linear-gradient(to right,#8e44ad, #3498db);
+    color: #fff;
+    text-align: left;
+    padding: 10px; /* Use the same value in both cases */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;       
+}
+
+
+
+header h1 {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    letter-spacing: 0.15em;
+    animation: typing 3.5s steps(40, end) infinite, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    0%, 100% {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+
+#search {
+    text-align: right;
+}
+
+#search form {
+    display: flex;
+    align-items: center;
+}
+
+#search input {
+    margin-right: 10px; /* Add some spacing between the input and button */
+}
+
+nav {
+    background: linear-gradient(to left, #2ecc71, #3498db);
+    color: rgb(255, 255, 255);
+    border: solid rgb(151, 167, 255);
+    padding: 1px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+nav li {
+    display: inline-block; 
+    margin-right: 2px;
+    text-align: center;
+}
+
+nav a {
+
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav a:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    border-radius: 40px;
+    color: black;
+    background-color: rgb(85, 85, 255);
+
+}
+
+/* Your existing CSS code remains unchanged */
+
+/* Add sticky navigation */
+nav.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+section {
+    padding: 20px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {   
+    background: linear-gradient(to left, #66ccff, #3366ff);
+}
+
+#plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.highlight {
+    background: linear-gradient(to right, #00a5f8, rgb(163, 51, 255));
+    border: 2px solid #4682B4;
+    border-color: linear-gradient(to right,rgb(240, 8, 42), #00a5f8 );
+} 
+
+.plan {
+    border: 1px solid #ccc;
+    padding: 45px;
+    width: 200px; /* Adjust the width as needed */
+    height: 200px; /* Set the same height as the width for a square shape */
+    text-align: center; /* Center text content */
+    border-radius: 15px;
+    margin-top: 20px;
+    color: #333;
+    transition: transform 0.2s ease; /* Add a transition for smooth animation */
+}
+
+.plan:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05); /* Increase scale on hover for a subtle zoom effect */
+}
+
+
+
+
